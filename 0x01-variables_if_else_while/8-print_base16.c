@@ -11,7 +11,7 @@ int main(void)
 	char letter = 'a';
 	char newline = '\n';
 
-	while ((n >= 0) && (n < 10))
+	while ((n > 0) && (n <= 9))
 	{
 		putchar(n);
 		n++;
