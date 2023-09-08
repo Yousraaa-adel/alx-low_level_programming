@@ -2,6 +2,7 @@
 
 /**
  * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -9,16 +10,16 @@ int main(void)
 	char letter = 'a';
 	char newline = '\n';
 
-	if ((letter != 'q') && (letter != 'e'))
+	while ((letter >= 'a') && (letter <= 'z'))
 	{
-		while ((letter >= 'a') && (letter <= 'z'))
+		if ((letter != 'e') || (letter != 'q'))
 		{
 			putchar(letter);
 			letter++;
 		}
-
-		putchar(newline);
 	}
+
+	putchar(newline);
 
 	return (0);
 }
