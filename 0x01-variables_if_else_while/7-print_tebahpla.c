@@ -10,10 +10,10 @@ int main(void)
 	char letter = 'z';
 	char newline = '\n';
 
-	while ((letter <= 'z') && (letter >= 'a'))
+	while ((letter >= 'a') && (letter <= 'z'))
 	{
 		putchar(letter);
-		letter++;
+		letter--;
 	}
 	putchar(newline);
 
