@@ -8,7 +8,7 @@
 int main(void)
 {
 	int firstn = 0;
-	int secn = 0;
+	int secn = firstn + 1;
 
 	while ((firstn >= 0) && (firstn <= 9))
 	{
@@ -24,7 +24,6 @@ int main(void)
 			}
 		}
 		firstn++;
-		secn = 0;
 	}
 	putchar(10);
 
