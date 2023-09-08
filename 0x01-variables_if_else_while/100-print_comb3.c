@@ -8,7 +8,7 @@
 int main(void)
 {
 	int firstn = 0;
-	int secn = firstn + 1;
+	int secn = 0;
 
 	while ((firstn >= 0) && (firstn <= 9))
 	{
