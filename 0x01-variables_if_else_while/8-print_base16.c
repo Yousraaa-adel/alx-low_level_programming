@@ -11,9 +11,9 @@ int main(void)
 	char letter = 'a';
 	char newline = '\n';
 
-	while ((n > 0) && (n <= 9))
+	while ((n >= 0) && (n <= 9))
 	{
-		putchar(n);
+		putchar(n + 48);
 		n++;
 	}
 
