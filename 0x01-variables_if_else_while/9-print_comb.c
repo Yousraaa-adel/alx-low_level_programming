@@ -8,21 +8,18 @@
 int main(void)
 {
 	int n = 0;
-	char com = ',';
-	char sp = ' ';
-	char newline = '\n';
 
 	while ((n >= 0) && (n <= 9))
 	{
 		putchar(n + 48);
 		if (n < 9)
 		{
-			putchar(com);
-			putchar(sp);
+			putchar(44);
+			putchar(32);
 		}
 		n++;
 	}
-	putchar(newline);
+	putchar(10);
 
 	return (0);
 }
