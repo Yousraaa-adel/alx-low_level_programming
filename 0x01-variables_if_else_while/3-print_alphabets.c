@@ -10,13 +10,13 @@ int main(void)
 	char upper = 'A';
 	char newline = '\n';
 
-	while ((lower <= 'a') && (lower <= 'z'))
+	while ((lower >= 'a') && (lower <= 'z'))
 	{
 		putchar(lower);
 		lower++;
 	}
 
-	while ((upper >= 'a') && (upper <= 'z'))
+	while ((upper >= 'A') && (upper <= 'Z'))
 	{
 		putchar(upper);
 		upper++;
