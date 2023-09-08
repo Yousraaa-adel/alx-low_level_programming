@@ -15,7 +15,7 @@ int main(void)
 		putchar(firstn + 48);
 		while ((secn >= 0) && (secn <= 9))
 		{
-			putchar(secn + 48);
+			putchar(secn);
 			secn++;
 			if (secn <= 9)
 			{
