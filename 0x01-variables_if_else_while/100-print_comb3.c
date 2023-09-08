@@ -16,12 +16,12 @@ int main(void)
 		while ((secn >= 1) && (secn <= 9))
 		{
 			putchar(secn + 48);
+			secn++;
 			if (secn <= 9)
 			{
 				putchar(44);
 				putchar(32);
 			}
-			secn++;
 		}
 		firstn++;
 	}
