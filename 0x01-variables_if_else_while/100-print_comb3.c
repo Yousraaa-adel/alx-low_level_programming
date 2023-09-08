@@ -13,6 +13,7 @@ int main(void)
 	while ((firstn >= 0) && (firstn <= 9))
 	{
 		putchar(firstn + 48);
+		firstn++;
 		while ((secn >= 0) && (secn <= 9))
 		{
 			putchar(secn + 48);
@@ -23,7 +24,6 @@ int main(void)
 				putchar(32);
 			}
 		}
-		firstn++;
 	}
 	putchar(10);
 
