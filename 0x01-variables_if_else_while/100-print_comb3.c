@@ -8,12 +8,12 @@
 int main(void)
 {
 	int firstn = 0;
-	int secn = 0;
+	int secn = 1;
 
 	while ((firstn >= 0) && (firstn <= 9))
 	{
 		putchar(firstn + 48);
-		while ((secn >= 0) && (secn <= 9))
+		while ((secn >= 1) && (secn <= 9))
 		{
 			putchar(secn + 48);
 			if (secn <= 9)
