@@ -7,25 +7,32 @@
  */
 int main(void)
 {
-	int firstn = 0;
-	int secn = 1;
+	int num1 = 0;
+	int num2 = 0;
 
-	while ((firstn >= 0) && (firstn <= 9))
+	while (num <= 9)
 	{
-		putchar(firstn + 48);
-		while (secn <= 9)
+		while (num2 <= 9)
 		{
-			putchar(secn + 48);
-			secn++;
-			if (secn <= 9)
+			if (!(num1 > num2 || num1 == num2))
 			{
-				putchar(44);
-				putchar(32);
+				putchar(num1);
+				putchar(num2);
+				if (num1 == 8 && num2 == 9)
+				{
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			num2++;
 		}
-		firstn++;
+		num2 = 0;
+		num1++;
 	}
-	putchar(10);
 
 	return (0);
 }
