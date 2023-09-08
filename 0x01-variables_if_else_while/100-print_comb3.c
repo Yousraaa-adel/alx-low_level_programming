@@ -13,7 +13,7 @@ int main(void)
 	while ((firstn >= 0) && (firstn <= 9))
 	{
 		putchar(firstn + 48);
-		while ((secn >= 1) && (secn <= 9))
+		while (secn <= 9)
 		{
 			putchar(secn + 48);
 			secn++;
