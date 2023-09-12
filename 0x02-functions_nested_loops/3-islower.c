@@ -9,7 +9,8 @@
  */
 int _islower(int c)
 {
-	char letter = 'c';
+	int n = c;
+	char letter = 'n';
 
 	if (islower(letter))
 	{
