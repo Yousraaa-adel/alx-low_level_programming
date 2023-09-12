@@ -8,9 +8,9 @@
  */
 int _islower(int c)
 {
-	char letter = chr(n);
+	char letter = chr(c);
 
-	if (islower(c))
+	if (islower(letter))
 	{
 		return (1);
 	}
