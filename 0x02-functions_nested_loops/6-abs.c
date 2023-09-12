@@ -4,9 +4,9 @@
 /**
  * _abs - A function to get the absolute value of an integer
  *
- * Return: 
+ * Return: absolute n
  */
 int _abs(int n)
 {
-	return abs(n);
+	return (abs(n));
 }
