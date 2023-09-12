@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * print_sign - A function that prints the sign of a number
@@ -9,20 +8,20 @@
  */
 int print_sign(int n)
 {
-	if (isalpha(n > 0))
+	if (n > 0)
 	{
-		putchar('+');
 		return (1);
+		putchar('+');
 	}
-	else if (isalpha(n == 0))
+	else if (n == 0)
 	{
-		putchar('0');
 		return (0);
+		putchar('0');
 	}
-	else if (isalpha(n < 0))
+	else if (n < 0)
 	{
-		putchar('-');
 		return (-1);
+		putchar('-');
 	}
 
 	return (0);
