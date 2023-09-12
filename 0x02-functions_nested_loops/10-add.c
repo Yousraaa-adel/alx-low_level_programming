@@ -8,9 +8,12 @@
  */
 int add(int a, int b)
 {
-	int a, b, result;
+	int num1, num2, result;
 
-	result = a + b;
+	num1 = a;
+	num2 = b;
+
+	result = num1 + num2;
 
 	return (result);
 }
