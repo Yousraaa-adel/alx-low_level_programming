@@ -3,8 +3,9 @@
 
 /**
  * print_putchar - Printing a _putchar string
+ *
  * Description: Printing a _putchar string
- * String: array of characters
+ * @string: A string of characters
  */
 void print_putchar(char string[])
 {
