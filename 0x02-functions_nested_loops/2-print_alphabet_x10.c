@@ -8,21 +8,17 @@ void print_alphabet_x10(void)
 {
 	int letter = 'a';
 	int line = 0;
+	int all = 0;
 
 	while (line < 10)
 	{
-		if (letter == 'z')
-		{
-		putchar('\n');
-		}
-		else
-		{
 		while (letter <= 'z')
 		{
 			putchar(letter);
 			letter++;
+			all++;
 		}
-		}
+		putchar('\n');
 		line++;
 	}
 }
