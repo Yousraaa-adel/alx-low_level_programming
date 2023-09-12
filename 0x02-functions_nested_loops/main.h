@@ -5,4 +5,6 @@ void print_putchar(char string[]);
 
 void print_alphabet_x10(void);
 
+int _islower(int c);
+
 #endif /* MAIN_H */
