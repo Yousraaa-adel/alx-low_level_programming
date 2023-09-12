@@ -3,7 +3,7 @@
 
 /**
  * print_last_digit - prints last digit
- * @num: any integer
+ * @a: any integer
  * Return: last digit
  */
 int print_last_digit(int a)
@@ -12,7 +12,7 @@ int print_last_digit(int a)
 
 	if (a < 0)
 	{
-		b = -1 * (a%10);
+		b = -1 * (a % 10);
 		_putchar(b + '0');
 		return (b);
 	}
