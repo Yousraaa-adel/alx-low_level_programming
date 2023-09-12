@@ -1,4 +1,4 @@
 void print_putchar()
 {
-  putchar("_putchar");
+	_putchar("_putchar");
 }
