@@ -1,4 +1,5 @@
-void print_putchar()
-{
-	_putchar("_putchar");
-}
+#ifndef MAIN_H
+#define MAIN_H
+
+void print_putchar();
+#endif /* MAIN_H */
