@@ -6,8 +6,10 @@
  * @c: any alphabetic character
  * Return: void
  */
-int _islower(c)
+int _islower(int c)
 {
+	char letter = chr(n);
+
 	if (islower(c))
 	{
 		return (1);
