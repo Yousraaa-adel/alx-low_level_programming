@@ -8,7 +8,12 @@
  */
 void print_putchar(char *string) 
 {
-  putchar(*string);
+	int i = 0;
+	while (string[i] != '\0')
+	{
+	putchar(string[i]);
+	i++;
+	}
 }
 
 int main(void)
