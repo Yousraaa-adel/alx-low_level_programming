@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <ctype.h>
 
 /**
@@ -11,10 +10,10 @@ int _isalpha(int c)
 {
 	if (isalpha(c))
 	{
-		putchar(1);
+		return (1);
 	}
 	else
 	{
-		putchar(0);
+		return (0);
 	}
 }
