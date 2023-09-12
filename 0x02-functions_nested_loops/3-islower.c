@@ -6,7 +6,7 @@
  * @c: any alphabetic character
  * Return: void
  */
-int _islower(int c)
+int _islower(c)
 {
 	if (islower(c))
 	{
