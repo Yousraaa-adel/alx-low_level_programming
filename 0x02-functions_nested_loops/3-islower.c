@@ -6,7 +6,7 @@
  * @c: any alphabetic character
  * Return: void
  */
-_islower(int c)
+int _islower(int c)
 {
 	char letter = chr(c);
 
@@ -19,3 +19,5 @@ _islower(int c)
 		return (0);
 	}
 }
+
+_islower();
