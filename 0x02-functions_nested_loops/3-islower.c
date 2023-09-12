@@ -9,7 +9,7 @@
  */
 int _islower(int c)
 {
-	char letter = chr(c);
+	char letter = 'c';
 
 	if (islower(letter))
 	{
