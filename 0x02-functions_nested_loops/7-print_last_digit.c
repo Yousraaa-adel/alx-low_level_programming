@@ -6,17 +6,20 @@
  * @num: any integer
  * Return: last digit
  */
-int print_last_digit(int num)
+int print_last_digit(int a)
 {
-	int last_digit;
+	int b;
 
-	if (num < 0)
+	if (a < 0)
 	{
-		num = -num;
+		b = -1 * (a%10);
+		_putchar(b + '0');
+		return (b);
 	}
-
-	last_digit = num % 10;
-	_putchar('0' + last_digit);
-
-	return (last_digit);
+	else
+	{
+		b = a % 10;
+		_putchr(b + '0');
+		return (b);
+	}
 }
