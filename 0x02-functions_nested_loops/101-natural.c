@@ -25,13 +25,11 @@ int natural_nums(void)
 
 /**
  * main - Entry point
- *
+ * @num: variable from the natural_nums function
  * Return: Always 0 (Success)
  */
 int main(int num)
 {
-	int num;
-
 	natural_nums();
 	printf("%d\n", num);
 
