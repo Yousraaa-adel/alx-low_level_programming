@@ -1,16 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - Entry point
- *
- *
  *
  * Return: void
  */
 int main(void)
 {
-	positive_or_negative(0);
+	int i;
+
+	i = 98 % 2;
+	positive_or_negative(i);
 
 	return (0);
 }
