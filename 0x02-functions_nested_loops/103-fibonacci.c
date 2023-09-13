@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0;
-	unsigned long fib2 = 0;
+	unsigned long fib2 = 1;
 	unsigned long sum;
 	float  total_sum;
 
