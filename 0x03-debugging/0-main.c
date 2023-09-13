@@ -10,7 +10,7 @@ int main(void)
 {
 	int result;
 
-	result = postitive_or_negative(0);
+	result = positive_or_negative(0);
 
 	if (result == 0)
 	{
@@ -24,6 +24,7 @@ int main(void)
 	{
 		printf("%d is negative\n", result);
 	}
-
+	
+	return (0);
 
 }
