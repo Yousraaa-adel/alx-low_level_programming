@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
+ * natural_nums - Prints sum
  *
- * Return: Always 0 (Success)
+ * Return: Sum of nums multiplied by 3 or 5
  */
-void natural_nums(void)
+int natural_nums(void)
 {
 	int sum = 0;
 	int num = 0;
@@ -19,5 +20,20 @@ void natural_nums(void)
 
 		num++;
 	}
+	return (sum);
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int num)
+{
+	int num;
+
+	natural_nums();
 	printf("%d\n", num);
+
+	return (0);
 }
