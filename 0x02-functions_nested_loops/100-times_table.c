@@ -20,11 +20,15 @@ void print_times_table(int n)
 		while (col <= n)
 		{
 			prod = row * col;
-			printf("%d,   ", prod);
+			printf("%d", prod);
+			if (col < n)
+			{
+				printf(",   ");
+			}
 
 			col++;
 		}
-		printf(",\n");
+		printf("\n");
 		row++;
 		}
 	}
