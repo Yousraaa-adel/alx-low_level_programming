@@ -1,35 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_times_table - prints time tables of n
- * @n: any integer
- * Return: void
+ *times_table - prints the 9 times table
+ *
+ *Return: returns nothing
  */
-void print_times_table(int n)
+void times_table(void)
 {
-	int row = 0;
-	int col;
-	int prod = 0;
-
-	if ((n >= 0) && (n <= 15))
+	int digit, mult, result;
+	for (digit = 0; digit <= 9; digit++)
 	{
-		while (row <= n)
-		{
-		col = 0;
-		while (col <= n)
-		{
-			prod = row * col;
-			printf("%d", prod);
-			if (col < n)
-			{
-				printf(",   ");
-			}
+		_putchar('0');
 
-			col++;
+		for (mult = 1; mult <= 9; mult++)
+		{
+			_putchar(',');
+			_putchar(' ');
+			result = digit * mult;
+			if (result <= 9)
+				_putchar(' ');
+			else
+				_putchar((result / 10) + '0');
+
+			_putchar((result % 10) + '0');
 		}
-		printf("\n");
-		row++;
-		}
+		_putchar('\n');
 	}
 }
