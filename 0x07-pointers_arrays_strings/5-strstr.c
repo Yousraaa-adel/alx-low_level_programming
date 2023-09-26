@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strstr - A  function finds the first occurrence of
@@ -11,6 +12,11 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *ptr1 = needle;
+
+	if (strlen(needle) > strlen(haystack)) {
+		return NULL;
+	}
+
 
 	while (*haystack != '\0')
 	{
