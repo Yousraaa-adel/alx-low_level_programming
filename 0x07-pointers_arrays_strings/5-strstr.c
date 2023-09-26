@@ -13,8 +13,9 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *ptr1 = needle;
 
-	if (strlen(needle) > strlen(haystack)) {
-		return NULL;
+	if (strlen(needle) > strlen(haystack))
+	{
+		return (NULL);
 	}
 
 
@@ -23,7 +24,9 @@ char *_strstr(char *haystack, char *needle)
 		char *haystack_ptr = haystack;
 		char *needle_ptr = needle;
 
-		while (*haystack_ptr != '\0' && *needle_ptr != '\0' && *haystack_ptr == *needle_ptr)
+		while (*haystack_ptr != '\0'
+			&& *needle_ptr != '\0'
+			&& *haystack_ptr == *needle_ptr)
 		{
 			haystack_ptr++;
 			needle_ptr++;
@@ -31,7 +34,7 @@ char *_strstr(char *haystack, char *needle)
 
 		if (*needle_ptr == '\0')
 		{
-			return haystack;
+			return (haystack);
 		}
 
 		needle = ptr1;
