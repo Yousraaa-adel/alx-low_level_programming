@@ -6,12 +6,12 @@
  * and initializes it with a specific char.
  * @size: an integer for array size
  * @c: a character
- * Return: array
+ * Return: arraiy
  */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char *array = (char *)malloc((size + 1) * sizeof(char));
+	char *array = (char *)malloc((size) * sizeof(char));
 
 	if (array == NULL)
 	{
