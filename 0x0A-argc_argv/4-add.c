@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * isInteger - A function that checks if s is an integer
+ * isInt - A function that checks if s is an integer
  * @s: a string to check
  * Return: 0 if there's no number or 1 if one of
  * the numbers contains symobls.
