@@ -4,21 +4,21 @@
 
 /**
  * _setnem - A function to copy a character
- * @s: a string
- * @b: a string
- * @n: an integer
+ * @str: a string
+ * @l: a string
+ * @num: an integer
  * Return: a string
  */
-char *_setnem(char *s, char b, unsigned int n)
+char *_setnem(char *str, char l, unsigned int num)
 {
-	unsigned int i;
+	unsigned int x;
 
-	for (i = 0; i < n; i++)
+	for (x = 0; x < num; x++)
 	{
-		s[i] = b;
+		str[x] = l;
 	}
 
-	return (s);
+	return (str);
 }
 
 /**
@@ -29,15 +29,15 @@ char *_setnem(char *s, char b, unsigned int n)
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p;
+	void *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	p = malloc(nmemb * size);
+	ptr = malloc(nmemb * size);
 
-	if (p == NULL)
+	if (ptr == NULL)
 		return (NULL);
-	_setnem(p, 0, (nmemb * size));
+	_setnem(ptr, 0, (nmemb * size));
 
-	return (p);
+	return (ptr);
 }
