@@ -19,7 +19,7 @@ return (0);
 temp = *head;
 n_copy = temp->n;
 *head = temp->next;
-free(*head);
+free(temp);
 
 return (n_copy);
 
