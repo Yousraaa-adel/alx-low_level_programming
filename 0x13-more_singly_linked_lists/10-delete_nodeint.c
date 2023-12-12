@@ -23,6 +23,7 @@ for (count = 0; (count < (index - 1)) && (prev != NULL); count++)
 {
 prev = prev->next;
 }
+}
 
 temp = prev->next;
 
