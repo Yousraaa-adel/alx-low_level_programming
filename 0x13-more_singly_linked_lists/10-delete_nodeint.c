@@ -19,7 +19,7 @@ return (-1);
 
 if (index != 0)
 {
-for (count = 0; count < (index - 1) && (prev != NULL); count++)
+for (count = 0; (count < (index - 1)) && (prev != NULL); count++)
 {
 prev = prev->next;
 }
@@ -38,7 +38,5 @@ free(prev);
 }
 
 return (1);
-
-}
 
 }
