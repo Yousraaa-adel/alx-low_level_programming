@@ -1,6 +1,5 @@
 #include "lists.h"
 
-
 /**
 * free_dlistint - frees the doubly linked list
 * @head: a pointer to the list
@@ -9,21 +8,16 @@
 void free_dlistint(dlistint_t *head)
 {
 
-dlistint_t *t, *t2;
-
-t = head;
-
-while (head != NULL)
+if (head != NULL)
 {
-/*Store the next node's address in t2*/
-t2 = t->next;
+/*traverse the list freeing each node*/
+dlistint_t *next = head->next;
 
-/*Free the current node*/
-free(t);
+free(head);
 
+head = next;
 
-/*Move t to the next node (stored in t2)*/
-t = t2;
 }
+
 
 }
