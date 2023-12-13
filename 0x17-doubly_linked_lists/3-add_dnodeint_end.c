@@ -21,8 +21,10 @@ return (NULL);
 /*Assign data(n) to the newNode*/
 new_node->n = n;
 
-/*point next of the newNode to NULL since it's the last node*/
+/*The newNode is going to be the last node so make its next NULL*/
 new_node->next = NULL;
+
+last = *head;
 
 /*If there's no head/list, make newNode the head of the list*/
 if (*head == NULL)
