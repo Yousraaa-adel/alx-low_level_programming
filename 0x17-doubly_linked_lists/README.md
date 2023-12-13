@@ -1,0 +1,1 @@
+A project meant to help understand the Doubly Linked Lists data structures in C.
