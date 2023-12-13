@@ -24,10 +24,22 @@ if (new_node == NULL)
 return (NULL);
 }
 
-/*Assign values to the new node and make it head*/
+/*Assign data(n) to the new node*/
 new_node->n = n;
+
+/*point next of newNode to the first node of the list*/
 new_node->next = *head;
+
+/*point prev of the newNode to NULL*/
 new_node->prev = NULL;
+
+/*point prev of the 1st node (now first node is the 2nd node) to the newNode*/
+if ((*head) != NULL)
+{
+(*head)->prev = new_node;
+}
+
+/*head points to the newNode*/
 *head = new_node;
 
 return (new_node);
