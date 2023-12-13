@@ -27,7 +27,7 @@ return (NULL);
 /*Assign values to the new node and make it head*/
 new_node->n = n;
 new_node->next = *head;
-*head = new;
+*head = new_node;
 
 return (new_node);
 
