@@ -8,16 +8,17 @@
 void free_dlistint(dlistint_t *head)
 {
 
-if (head != NULL)
+dlistint_t *next;
+
+while (head)
 {
 /*traverse the list freeing each node*/
-dlistint_t *next = head->next;
+next = head->next;
 
 free(head);
 
 head = next;
 
 }
-
 
 }
