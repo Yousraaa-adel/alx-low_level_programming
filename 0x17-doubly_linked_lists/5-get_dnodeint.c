@@ -11,8 +11,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 unsigned int count = 0;
 
-/*Check if list is empty or index doesn't exist*/
-if (head == NULL || index == NULL)
+if (head == NULL)
 {
 return (NULL);
 }
