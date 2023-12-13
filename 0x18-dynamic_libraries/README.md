@@ -1,0 +1,1 @@
+A project meant to understand the difference between Static linking and Dynamic linking in C.
